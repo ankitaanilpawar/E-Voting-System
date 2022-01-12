@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  .w3-container{ font-family: "Rockwell";font-size: medium;}
+  .h3{font-family: "Rockwell";}
+  body {
+    font-family: 'Rockwell';
+
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: right;
+    width: 25%;
+    padding: 20px 30px;
+  
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 0px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: auto;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 450px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+  }
+  </style>
+<body background="green">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="font-family:'Times New Roman', Times, serif">
+  <div class="card" style="background:#0d0731;color: white;font-size: 30px;width:100%;float: left;height: 10%;">
+    <b><img src="l.png" height="90px" width="90px" margin-left=1px> &nbsp;ZEAL INSTITUTE OF BUSINESS ADMINISTRATION COMPUTER APPLICATION</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small" style="font-size: 20px;">
+      <a href="#Home" class="w3-bar-item w3-button">Home</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#Help" class="w3-bar-item w3-button">Help</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="Home">
+  <br><br><br><br><br><br>
+  <center><img class="w3-image" src="A3.png" alt="Architecture" width="100%"></center>
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <br><br><br><br><div class="row">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min">
+      <b>E</b></span> <span class="w3-hide-small w3-text-light-grey">VOTING</span></h1>
+      <br>
+      <marquee><h2>Welcome!</h2></marquee>
+    </header>
+      <div class="column">
+        <div class="card">
+          <p>Contesting Candidate</p>
+          <a href="Admin.html"><img src="d1.jpg"></a>
+          <p>Register for election</p>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <p>Vote</p>
+          <a href="Voter.html"> <img src="d3.jpg" target="Voter.html"></a>
+          <p>Give Vote</p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <p>Admin</p>
+          <a href="Admin.html"><img src="Admin.jpg"></a>
+          <p>Login</p>
+        </div>
+      </div>
+      
+      <div class="column" >
+        <div class="card">
+          <p>Result</p>
+          <a href="Result.jsp"><img src="d4.jpg" target="Result.jsp"></a>
+          <p>See Result</p>
+        </div>
+      </div>
+      <p align="Center">The vote is precious.It is the most powerful progresive and non-voilent tool we have in our institute and 
+        we must use it.When we vote we take back our power to choose,to speakup and to stand with
+         those who support us and eachother to grow together.</p >
+      
+  <div class="w3-container w3-padding-32" id="about" style="font-family: Rockwell;">
+  <!-- About Section --><hr >
+  <div class="w3-container w3-padding-32">
+    <center><h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><img src="About.jpg">&nbsp;&nbsp;About Us</h3></center>
+    <p style="line-height: 1.7;font-style: Bold;">
+      &#9830	The purpose of E-Voting System is to facilitate online web based automated system by the help of 
+      computerized and full-fledged computer software. fulfilling the organization’s requirements, 
+      so that their valuable data/information can be stored for a longer period with easy accessing and manipulation of the same.<br>
+      &#9830	To provide facility of managing the voters and contesting candidate’s information.<br>
+      &#9830	To provide the facility to admin to schedule the election which the organization has to conduct for their current requirement.<br>
+      &#9830	To provide the facility of username and password to admin for data security.<br>
+      &#9830	To provide validation to voting process to ensure that only eligible voters which are registered on the system can vote.<br>
+      &#9830	To provide the facility of username and password to voters for their secure voting process.<br>
+      &#9830	To generate different reports of voters details, contesting candidates details and voting reports which can be accessed by only admin.<br>
+      &#9830	To provide a facility to admin to access voting data and manage candidates details.<br>
+      &#9830	To facilitate the feature of single vote from single candidate to avoid the double or repeated voting by voter for same election.<br>
+      &#9830	To generate results by calculations which can be access by the admin.
+      
+        </p >
+  </div>
+  <div class="w3-container w3-padding-32" id="Help" style="font-family: Rockwell;"></div>
+    <!-- About Section --><hr >
+    <div class="w3-container w3-padding-30">
+      <center><h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><img src="Help.jpg">&nbsp;&nbsp;Help</h3></center>
+      <center><p style="line-height: 1.7;font-style: Bold;">
+        The system “E-voting System” is a web application that is used for maintain the
+        records in an organized manner and to replace old paper work system.<br>
+         E-voting is automatic electronic system to aid casting and counting votes.<br>
+          Updating and modifications will be easily achievable and all the calculations and counting work would be accurate.<br>
+        The E-Voting system will manage the voter’s information by which voter can login and use his voting rights.<br> 
+        Candidates which are shortlisted have to register to system to obtain for election. <br>
+        The system will corporate all features of voting system.
+        It provides the voters vote for every party. <br>
+        System uses database which is maintained by admin with all the names of voter’s candidates and parties with their complete information.<br>
+         Voting details are store in database and result is displayed by the calculation.<br>
+        Web application means that the system will be available for access 24/7 except when there
+        is a temporary server issue which is expected to be minimal.<br>
+         Organization admin as well as the company’s staff will be able to use the system effectively.<br>
+          System can be only accessible for administrative staff and organization staff.
+          </p></center>
+    </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><img src="Contact.jpg">&nbsp;&nbsp;Contact</h3>
+    
+    <p style="line-height: 2.8;font-style: Bold;">
+      Location : Sr. No. 39, Narhe, Pune -411041, (Approved by A.I.C.T.E.,
+      New Delhi,Recognized by DTE,Govt. Maharashtra & Affiliated to
+      S.P.P.U. Pune)<br>
+      Phone No. : 67206031 <br>
+      Website : zealeducation.com
+    </p>
+  </div>
+  
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Copyrights &#169 Reserved</p>
+</footer>
+
+</body>
+</html>

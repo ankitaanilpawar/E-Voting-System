@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  .w3-container{ font-family: "Rockwell";font-size: medium;}
+  .h3{font-family: "Rockwell";}
+  body {
+    font-family: 'Rockwell';
+
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: right;
+    width: 25%;
+    padding: 20px 30px;
+  
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 0px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: auto;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 450px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+  }
+  </style>
+  <style>
+    .submitbtn {
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     }
+   
+   .submitbtn:hover {
+     opacity: 1;
+     background-color:#b83737;
+     color: #ddd;
+     box-shadow:10px #555;
+   }
+   
+       </style>
+        <script>
+          function myfunction()
+          {
+          if(confirm("Do you want to shedule new election ?"))
+          {
+            return window.location.href="Shedulenew.html";
+          }
+          else{
+            text="You don't want to shedule new election you pressed ok button!";
+          }
+          
+          }
+          </script>
+<body>
+  <div class="w3-top" style="font-family:'Times New Roman', Times, serif">
+    <div class="card" style="background:#0d0731;color: white;font-size: 30px;width:100%;float: left;height: 10%;">
+      <b><img src="l.png" height="90px" width="90px" margin-left=1px> &nbsp;ZEAL INSTITUTE OF MANAGEMENT AND COMPUTER APPLICATION</b></a>
+      <div class="w3-right w3-hide-small" style="font-size: 20px;">
+        <a href="Home.html" class="w3-bar-item w3-button">&#9746 Logout</a>
+        <input type="submit" value="&#9873 Schedule New Election" class="submitbtn" onclick="myfunction()">
+        </div>
+    </div>
+  </div>
+<!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="Home">
+  <br><br><br><br><br><br>
+  <center><img class="w3-image" src="A3.png" alt="Architecture" width="100%"></center>
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <br><br><br><br><div class="row">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min">
+      <b>E</b></span> <span class="w3-hide-small w3-text-light-grey">VOTING</span></h1>
+      <br>
+      <marquee><h2>Welcome!</h2></marquee>
+    </header>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <p>Contesting Candidate</p>
+          <a href="CC.html"><img src="CC11.jpg"></a>
+          <p>Register for election</p><br>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <p>Report</p>
+          <a href="VoterReport.jsp"> <img src="d31.jpg" target="Voter.html"></a>
+          <p>View Voters Report</p><br>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <p>Report</p>
+          <a href="CCReport.jsp"><img src="Ca1.jpg"></a>
+          <p>View Contesting candidate Report</p>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <p>Report</p>
+          <a href="ResultReport.jsp"><img src="d51.jpg"></a>
+          <p>View Result Report</p><br>
+        </div>
+      </div>
+      </div>
+      <p align="Center">The vote is precious.It is the most powerful progresive and non-voilent tool we have in our institute and 
+        we must use it.When we vote we take back our power to choose,to speakup and to stand with
+         those who support us and eachother to grow together.</p >
+      
+  
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Copyrights &#169 Reserved</p>
+</footer>
+
+</body>
+</html>

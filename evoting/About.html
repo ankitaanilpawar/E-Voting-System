@@ -1,0 +1,136 @@
+<html>
+<head>
+<style>
+  .H1 {
+    color: white;
+  }
+</style>
+  <style>
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #03254c;
+    position: absolute;
+    height: 80%;
+    overflow: auto;
+  }
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color:#0d9b83;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 0px 40px;
+    height: 500px;
+    font-family: 'Rockwell';
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: fit-content;
+      position: static;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+</style>
+  <style>
+    .footer {
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       height:fit-content;;
+       background-color: #03254c;
+       color:white;
+       text-align: center;
+      
+    }
+    .body {
+      font-family: 'Rockwell';
+    }
+    .head {
+      font-family: 'Rockwell';
+    }
+    .p {
+      font-style: Bold;
+      
+    }
+    </style>
+<body font="Rockwell" >
+  <div class="head">
+    <header">
+          <table  width=100% bgcolor="#03254c" Cellpadding=10 cellpadding=40>
+            <tr>
+              <td><Center><img src="l.png" width="120" height="100">
+               </td>
+           <td>
+             <H1><b><p class="H1">E-VOTING SYSTEM <BR>ZEAL INSTITUE OF MANAGEMENT AND COMPUTER APPLICATIONS</p></H1></b></center></td>
+           </tr></table>
+    </header>
+<div class="sidebar">
+  <a  href="Home.html">Home</a>
+  <a href="Admin.html">Admin</a>
+  <a href="Voter.html">Voter</a>
+  <a href="Admin.html">Contesting candidate</a>
+  <a href="Help.html">Help</a>
+  <a href="Contact.html">Contact</a>
+  <a class="active" href="About.html">About</a>
+</div>
+</div>
+<div class="content">
+<table cellspacing=20 >
+<tr><td><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us</h1><figure><img src="About.jpg"></figure></td><td>
+  <p style="line-height: 1.7;font-style: Bold;">
+&#9830	The purpose of E-Voting System is to facilitate online web based automated system by the help of 
+computerized and full-fledged computer software. fulfilling the organization’s requirements, 
+so that their valuable data/information can be stored for a longer period with easy accessing and manipulation of the same.<br>
+&#9830	To provide facility of managing the voters and contesting candidate’s information.<br>
+&#9830	To provide the facility to admin to schedule the election which the organization has to conduct for their current requirement.<br>
+&#9830	To provide the facility of username and password to admin for data security.<br>
+&#9830	To provide validation to voting process to ensure that only eligible voters which are registered on the system can vote.<br>
+&#9830	To provide the facility of username and password to voters for their secure voting process.<br>
+&#9830	To generate different reports of voters details, contesting candidates details and voting reports which can be accessed by only admin.<br>
+&#9830	To provide a facility to admin to access voting data and manage candidates details.<br>
+&#9830	To facilitate the feature of single vote from single candidate to avoid the double or repeated voting by voter for same election.<br>
+&#9830	To generate results by calculations which can be access by the admin.
+
+  </p></td></tr>
+</table>
+</div>
+<div class="footer">
+  <br>
+  <p>Copyrights &#169 Reserved </p>
+</div>
+</a>
+</body>
+</html>
+
+

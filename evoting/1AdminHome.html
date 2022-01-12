@@ -1,0 +1,252 @@
+<html>
+<head>
+<style>
+  .H1 {
+    color: white;
+  }
+  body {
+    font-family: 'Rockwell';
+
+  }
+</style>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Rockwell';
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 20px 30px;
+  
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 0px;
+    font-family: 'Rockwell';}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: auto;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 450px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+      font-family: 'Rockwell';
+    }
+  }
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    text-align: center;
+    background-color: #f1f1f1;
+    font-family: 'Rockwell';
+  }
+  </style>
+  <style>
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #03254c;
+    position: absolute;
+    height: 80%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color:#0d9b83;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 0px 40px;
+    height: 470px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: fit-content;
+      position: static;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+</style>
+  <style>
+    .footer {
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       height:fit-content;;
+       background-color: #03254c;
+       color:white;
+       text-align: center;
+    }
+</style>
+<style>
+ .submitbtn {
+  background-color: #207223;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+  font-family: "Rockwell";
+  font-size: 18;
+  margin-left: 80%;
+  }
+
+.submitbtn:hover {
+  opacity: 1;
+  background-color:#b83737;
+  color: #ddd;
+  box-shadow:10px #555;
+}
+
+    </style>
+    <script>
+			function myfunction()
+			{
+      if(confirm("Do you want to shedule new election ?"))
+      {
+        return window.location.href="Shedulenew.html";
+      }
+      else{
+        text="You don't want to shedule new election you pressed ok button!";
+      }
+			
+			}
+			</script>
+<body>
+  
+
+<div class="head">
+<header">
+      <table  width=100% bgcolor="#03254c" Cellpadding=10 cellpadding=40>
+        <tr>
+          <td><Center><img src="l.png" width="120" height="100">
+           </td>
+       <td>
+         <H1><b><p class="H1">E-VOTING SYSTEM <BR>ZEAL INSTITUE OF MANAGEMENT AND COMPUTER APPLICATIONS</p></H1></b></center></td>
+       </tr></table>
+</header>
+<div class="sidebar">
+  <a  href="Home.html">Home</a>
+  <a class="active" href="Admin.html">Admin</a>
+  <a href="Voter.html">Voter</a>
+  <a href="Admin.html">Contesting candidate</a>
+  <a href="Help.html">Help</a>
+  <a href="Contact.html">Contact</a>
+  <a href="About.html">About</a>
+</div>
+</div>
+<div class="content">
+<center>
+<div class="transbox">
+    <p><h1><A><center></center></A></h1></p>
+</tr> 
+</tr>
+<input type="submit" value="Schedule New Election" class="submitbtn" onclick="myfunction()">
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Contesting Candidate</h3>
+      <a href="CC.html"><img src="CC1.jpg"></a>
+      <p>Register for election</p><br>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Report</h3>
+      <a href="VoterReport.jsp"> <img src="d3.jpg" target="Voter.html"></a>
+      <p>View Voters Report</p><br>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Report</h3>
+      <a href="CCReport.jsp"><img src="Cc.jpg"></a>
+      <p>View Contesting candidate Report</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Report</h3>
+      <a href="ResultReport.jsp"><img src="d5.jpg"></a>
+      <p>View Result Report</p><br>
+    </div>
+    
+  </div><br>
+  <p>The vote is precious.It is the most powerful progresive and non-voilent tool we have in our institute and 
+    we must use it.When we vote we take back our power to choose,to speakup and to stand with those who support us and 
+    eachother to grow together.</p>
+
+ 
+  </div>
+  
+</div>
+
+</tr>
+
+</tr>
+</div>
+</div>
+</tr> 
+</tr>
+</table>
+</center>
+<div class="footer">
+  <br>
+  <p>Copyrights &#169 Reserved</p>
+</div>
+</a>
+</body>
+</html>
+
+

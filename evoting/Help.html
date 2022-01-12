@@ -1,0 +1,137 @@
+<html>
+<head>
+<style>
+  .H1 {
+    color: white;
+  }
+</style>
+  <style>
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #03254c;
+    position: absolute;
+    height: 80%;
+    overflow: auto;
+  }
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color:#0d9b83;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 0px 40px;
+    height: 500px;
+    font-family: 'Rockwell';
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: fit-content;
+      position: static;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+</style>
+  <style>
+    .footer {
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       height:fit-content;;
+       background-color: #03254c;
+       color:white;
+       text-align: center;
+      
+    }
+    .body {
+      font-family: 'Rockwell';
+    }
+    .head {
+      font-family: 'Rockwell';
+    }
+    .p {
+      font-style: Bold;
+      
+    }
+    </style>
+<body font="Rockwell" >
+  <div class="head">
+    <header">
+          <table  width=100% bgcolor="#03254c" Cellpadding=10 cellpadding=40>
+            <tr>
+              <td><Center><img src="l.png" width="120" height="100">
+               </td>
+           <td>
+             <H1><b><p class="H1">E-VOTING SYSTEM <BR>ZEAL INSTITUE OF MANAGEMENT AND COMPUTER APPLICATIONS</p></H1></b></center></td>
+           </tr></table>
+    </header>
+<div class="sidebar">
+  <a  href="Home.html">Home</a>
+  <a href="Admin.html">Admin</a>
+  <a href="Voter.html">Voter</a>
+  <a href="Admin.html">Contesting candidate</a>
+  <a class="active" href="Help.html">Help</a>
+  <a href="Contact.html">Contact</a>
+  <a href="About.html">About</a>
+</div>
+</div>
+<div class="content">
+<table cellspacing=20 >
+<tr><td><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help</h1><figure><img src="Help.jpg"></figure></td><td>
+  <p style="line-height: 1.8;font-style: Bold;"><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The system “E-voting System” is a web application that is used for maintain the
+records in an organized manner and to replace old paper work system. E-voting is automatic
+electronic system to aid casting and counting votes. Updating and modifications will be
+easily achievable and all the calculations and counting work would be accurate.
+The E-Voting system will manage the voter’s information by which voter can
+login and use his voting rights. Candidates which are shortlisted have to register to system
+to obtain for election. The system will corporate all features of voting system. It provides
+the voters vote for every party. System uses database which is maintained by admin with
+all the names of voter’s candidates and parties with their complete information. Voting
+details are store in database and result is displayed by the calculation.
+Web application means that the system will be available for access 24/7 except when there
+is a temporary server issue which is expected to be minimal. Organization admin as well
+as the company’s staff will be able to use the system effectively. System can be only
+accessible for administrative staff and organization staff.
+  </p></td></tr>
+</table>
+</div>
+<div class="footer">
+  <br>
+  <p>Copyrights &#169 Reserved </p>
+</div>
+</a>
+</body>
+</html>
+
+
